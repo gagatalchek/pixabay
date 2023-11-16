@@ -1,0 +1,38 @@
+.input_container_search {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 344px;
+  padding: 12px 16px;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid #323b54;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 80px;
+  & input {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  & > svg {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    stroke: #475069;
+    margin-right: 16px;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+  & input:focus ~ svg {
+    stroke: grey;
+  }
+}
